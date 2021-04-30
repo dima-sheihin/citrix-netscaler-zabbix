@@ -41,21 +41,30 @@ Monitoring Citrix NetScaler from zabbix
 Шаблоны   Template_NetScaler_VPX_HAD_vServer.xml    и   Template_NetScaler_VPX_LB_vServer.xml  используются только в ns-vpx-had-vServer.pl и ns-vpx-lb-vserver.pl 
 
 В шаблонах Template_NetScaler_VPX_HAD_vServer.xml и Template_NetScaler_VPX_LB_vServer.xml нужно поправить некоторые макроссы:
+
 {$NODE_1} и {$NODE_2}  IP адреса нод
 
 {$NODE_1_NAME} и {$NODE_2_NAME} понятное имя нод, можно FQDN можно и иное понятное для вас имя
 
+
 Template_NetScaler_VPX_LB_vServer
 
   {$NODE_1} 172.16.0.1
+  
   {$NODE_1_NAME} nsvpxlb-01
+  
   {$NODE_2} 172.16.0.2
+  
   {$NODE_2_NAME}  nsvpxlb-02
+
 
 Template_NetScaler_VPX_HAD_vServer
 
   {$NODE_1} 172.16.10.1
+  
   {$NODE_1_NAME}  NSVPXHA-01
+  
   {$NODE_2} 172.16.10.2
+  
   {$NODE_2_NAME}  NSVPXHA-02
 
